@@ -1,0 +1,23 @@
+.header {
+  border-bottom: 1px solid var(--clorc-picter);
+  background-color: var(--alt-title-cl);
+}
+.navigation__nav {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--blc-clr-txt);
+
+  &:hover,
+  &:focus {
+    color: var(--main-blu-tx);
+  }
+}
+
+.list {
+  color: var(--main-blu-tx);
+}

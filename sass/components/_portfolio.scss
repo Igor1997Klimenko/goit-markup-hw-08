@@ -1,0 +1,20 @@
+.main-two {
+  background-color: var(--alt-title-cl);
+}
+.section-item {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.cursset__menu {
+  padding-left: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+  & .cursset__listen {
+    margin-right: 8px;
+  }
+  & .cursset__listen:last-child {
+    margin-right: 0px;
+  }
+}

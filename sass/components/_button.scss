@@ -1,0 +1,27 @@
+.button {
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--blc-clr-txt);
+  background-color: var(--sctn-ftr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  font-family: inherit;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--alt-title-cl);
+    background-color: var(--main-blu-tx);
+  }
+}
+
+.butt {
+  background-color: var(--main-blu-tx);
+  color: var(--alt-title-cl);
+}

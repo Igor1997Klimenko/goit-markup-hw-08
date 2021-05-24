@@ -3,12 +3,21 @@
   padding-bottom: 94px;
   padding-top: 94px;
   background-color: var(--sctn-ftr);
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 .page__captions {
   margin: 0;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
 }
 .holder__list {
   padding: 0;

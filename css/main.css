@@ -35,11 +35,29 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .navigation {
@@ -125,18 +143,91 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) {
+  .content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .inform__item {
   justify-content: space-between;
   display: flex;
   padding-left: 0;
 }
 
+@media screen and (max-width: 479px) {
+  .inform__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .inform__item {
+    display: flex;
+    flex-direction: column;
+    margin-right: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inform__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inform__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: -15px;
+  }
+}
+
 .inform__list {
   max-width: 270px;
 }
 
-.inform__list + .inform__list + .inform__list + .inform__list {
-  margin-right: 0;
+@media screen and (min-width: 480px) {
+  .inform__list {
+    max-width: 450px;
+    flex-wrap: wrap;
+    margin-right: 15px;
+  }
+  .inform__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inform__list {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inform__list {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .socials {
@@ -148,6 +239,24 @@ img {
   height: 120px;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  .socials {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .socials {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .socials {
+    width: 270px;
+  }
 }
 
 .socials__icon:nth-child(1) {
@@ -193,6 +302,24 @@ img {
   background-color: var(--alt-title-cl);
 }
 
+@media screen and (min-width: 480px) {
+  .page {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .page {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page {
+    display: block;
+  }
+}
+
 .page__caption {
   margin-bottom: 0;
   font-size: 36px;
@@ -212,6 +339,33 @@ img {
   margin-top: -30px;
 }
 
+@media screen and (min-width: 480px) {
+  .page__set {
+    display: flex;
+    flex-direction: column;
+    margin-right: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page__set {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: -15px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page__set {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: -15px;
+  }
+}
+
 .page__team--cursset {
   padding: 0;
 }
@@ -219,6 +373,25 @@ img {
 .page__time {
   margin-left: 30px;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .page__time {
+    flex-wrap: wrap;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page__time {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page__time {
+    margin-left: 15px;
+  }
 }
 
 .page__time--list {
@@ -236,11 +409,24 @@ img {
   background-color: var(--sctn-ftr);
 }
 
+@media screen and (min-width: 480px) {
+  .page-team {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
 .page__captions {
   margin: 0;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
+}
+
+@media screen and (min-width: 480px) {
+  .page__captions {
+    margin-bottom: 30px;
+  }
 }
 
 .holder__list {
@@ -980,6 +1166,12 @@ img {
 .section {
   text-align: center;
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    display: none;
+  }
 }
 
 :root {

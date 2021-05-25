@@ -30,8 +30,12 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+* {
+  outline: 1px solid red;
 }
 
 .container {
@@ -209,9 +213,10 @@ img {
 
 @media screen and (min-width: 480px) {
   .inform__list {
-    max-width: 450px;
+    max-width: 100%;
     flex-wrap: wrap;
     margin-right: 15px;
+    flex-basis: calc((100% - 1 * 30px) / 1);
   }
   .inform__list:not(:last-child) {
     margin-bottom: 30px;
@@ -366,6 +371,20 @@ img {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .settings-set {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .settings-set {
+    margin-bottom: 0;
+  }
+}
+
 .page__team--cursset {
   padding: 0;
 }
@@ -400,6 +419,18 @@ img {
 
 .page__tem--item {
   flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+@media screen and (min-width: 768px) {
+  .page__tem--item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page__tem--item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .page-team {
@@ -437,6 +468,18 @@ img {
   flex-basis: calc((100% - 4 * 30px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .holder__gallery--item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .holder__gallery--item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .divace {
@@ -505,12 +548,56 @@ img {
   padding-left: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .company__benefits {
+    display: flex;
+    margin-right: -15px;
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .company__benefits {
+    display: flex;
+    margin-right: -15px;
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company__benefits {
+    display: flex;
+    margin-right: -15px;
+    margin-bottom: -30px;
+  }
+}
+
 .company__features {
   flex-basis: calc((100% - var(--page__set-gap) * 6) / 6);
 }
 
-.company__features:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .company__features {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .company__features {
+    flex-basis: calc((100% - 3 * 15px) / 3);
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .company__features {
+    flex-basis: calc((100% - 6 * 15px) / 6);
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
 }
 
 .company__clients {
@@ -533,6 +620,12 @@ img {
   fill: var(--main-blu-tx);
 }
 
+@media screen and (min-width: 480px) {
+  .company__clients {
+    width: 100%;
+  }
+}
+
 .company__svg {
   height: inherit;
   fill: var(--primary-color);
@@ -541,6 +634,12 @@ img {
 
 .company__svg:hover, .company__svg:focus {
   fill: var(--main-blu-tx);
+}
+
+@media screen and (min-width: 480px) {
+  .company__svg {
+    width: 100%;
+  }
 }
 
 .main-two {
@@ -563,8 +662,53 @@ img {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 480px) {
+  .cursset__menu .cursset__listen {
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cursset__menu .cursset__listen {
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 0;
+  }
+}
+
 .cursset__menu .cursset__listen:last-child {
   margin-right: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .cursset__menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -8px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cursset__menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -8px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cursset__menu {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
 }
 
 .button {
@@ -596,6 +740,18 @@ img {
 .items {
   margin-left: 30px;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .items {
+    margin-bottom: 75px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .items {
+    margin-bottom: 0;
+  }
 }
 
 .spisok__itemnk-stylle {

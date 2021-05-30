@@ -205,16 +205,9 @@ img {
   color: var(--main-blu-tx);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 1200px) {
   .spisok__mobile {
     padding: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .spisok__mobile {
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 

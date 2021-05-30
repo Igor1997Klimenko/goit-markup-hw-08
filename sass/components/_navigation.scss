@@ -1,12 +1,28 @@
 .navigation {
   align-items: center;
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
 }
 
 .navigation__site-nav {
-  padding-left: 0;
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    display: flex;
+    margin-left: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
+    display: flex;
+    margin-left: 93px;
+  }
 }
+
 .navigation__link {
   margin: 0;
 }

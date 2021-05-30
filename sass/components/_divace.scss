@@ -18,6 +18,13 @@
   display: inline-flex;
   padding: 0;
 }
+
+.divace__svg--pictures {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+}
+
 .divace__social-icons:not(:last-child) {
   margin-right: 10px;
 }

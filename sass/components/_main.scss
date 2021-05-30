@@ -1,19 +1,90 @@
 .box {
+  background-color: var(--dark-bg);
+  padding-bottom: 200px;
+  padding-top: 200px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/imghero.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  background-color: var(--dark-bg);
+
+  @media screen and (max-width: 480px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile/hero/Hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+    background-color: var(--dark-bg);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile/hero/Hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+    background-color: var(--dark-bg);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    width: 768px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet/hero/Hero.jpg");
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-color: var(--dark-bg);
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop/hero/Hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+
+// }
+
 .main__title {
   text-align: center;
   max-width: 696px;
@@ -24,6 +95,12 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--alt-title-cl);
+
+  @media screen and (max-width: 1200px) {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.6;
+  }
 }
 .main__buttons {
   margin-top: 30px;

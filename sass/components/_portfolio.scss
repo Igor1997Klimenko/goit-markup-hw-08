@@ -2,8 +2,15 @@
   background-color: var(--alt-title-cl);
 }
 .section-item {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .cursset__menu {
   padding-left: 0;
@@ -43,13 +50,42 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: -15px;
-    margin-left: -8px;
     margin-bottom: 30px;
     justify-content: flex-start;
   }
 
   @media screen and (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+  }
+}
+.page__portfolio {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-top: -15px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: -15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: -15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
   }
 }

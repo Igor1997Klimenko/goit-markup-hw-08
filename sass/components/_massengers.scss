@@ -1,5 +1,13 @@
 .messengers {
   display: inline-block;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+  }
 }
 .messengers__footer {
   font-weight: 700;
@@ -7,4 +15,12 @@
   font-size: 14px;
   line-height: 1.1;
   color: var(--alt-title-cl);
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }

@@ -1,17 +1,5 @@
 .page {
   background-color: var(--alt-title-cl);
-
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 479px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: block;
-  }
 }
 .page__caption {
   margin-bottom: 0;
@@ -39,27 +27,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-right: -15px;
     justify-content: center;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-right: -15px;
+    margin: calc(-1 * 15px);
   }
 }
 
-.settings-set {
-  @media screen and (max-width: 480px) {
+.page-focus {
+  @media screen and (min-width: 1200px) {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  @media screen and (min-width: 480px) {
-    margin-bottom: 0;
+    flex-wrap: wrap;
   }
 }
 .page__team--cursset {
@@ -68,32 +44,32 @@
 .page__time {
   margin-left: 30px;
   margin-top: 30px;
-
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-    margin-right: 15px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-left: 15px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 15px;
-  }
 }
-
 .page__time--list {
   position: relative;
 }
 .page__tem--item {
   flex-basis: calc((100% - 3 * 30px) / 3);
 
+  @media screen and (max-width: 480px) {
+    flex-basis: calc((100% - 1 * 30px) / 1);
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 1 * 30px) / 1);
+    margin-right: 15px;
+  }
+
   @media screen and (min-width: 768px) {
+    margin: 15px;
     flex-basis: calc((100% - 2 * 30px) / 2);
+    display: flex;
   }
 
   @media screen and (min-width: 1200px) {
+    margin: 15px;
     flex-basis: calc((100% - 3 * 30px) / 3);
+    display: flex;
   }
 }

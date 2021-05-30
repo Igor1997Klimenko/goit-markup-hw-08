@@ -16,8 +16,9 @@
 </head>
 
 <body>
-    <!-- Site header-->
- <header class="header">
+    <!--Site header-->
+
+     <header class="header">
         <div class="container navigation">
 
             <nav class="navigation">
@@ -45,8 +46,49 @@
                 </li>
             </ul>
 
+            <button aria-expanded="false"
+                    aria-controls="menu__container"
+                     type="button" 
+                     class="spisok__menu"
+                     data-menu-button>
+                <svg class="spisok__menu-item" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="spisok__icon-close" href="./images/icons/sprite.svg#icon-close"></use>
+                    <use class="spisok__icon-open" href="./images/icons/sprite.svg#icon-menu"></use>
+                </svg>    
+            </button>
+
+
+
         </div>
-    </header>  
+    </header>
+
+    <div class="menu-container mobile-menu" data-menu>  
+            <ul class="mobile-menu__site-nav">
+                <li class="mobile-menu__link"><a class="mobile-menu__nav list mobile-menu__list--hero" href="">Студия</a></li>
+                <li class="mobile-menu__link"><a class="mobile-menu__nav" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile-menu__link"><a class="mobile-menu__nav" href="">Контакты</a></li>
+            </ul>
+
+            <div>
+            <ul class="mobile-block">
+                <li class="mobile-block__item">
+                    <a class="mobile-block__telephone" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+
+                <li class="mobile-block__item">
+                    <a class="mobile-block__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>               
+            </ul>
+
+            <ul class="social-time">
+                <li class="social-time__list"><a class="social-time__link">Instagram</a></li>
+                <li class="social-time__list"><a class="social-time__link social-time__befor">Twitter</a></li>
+                <li class="social-time__list"><a class="social-time__link social-time__befor">Facebook</a></li>
+                <li class="social-time__list"><a class="social-time__link social-time__befor">LinkedIn</a></li>
+            </ul>
+            </div>
+        
+    </div> 
 
     <!--Unique page-->
     <main>
@@ -114,21 +156,51 @@
         <section class="section team">
             <div class="container page">
                 <h2 class="page__caption page__title--text">Чем мы занимаемся</h2>
-                <ul class="page__set page__team--cursset">
-                    <li class="page__time page__time--list page__tem--item"><img src="./images/box-1.jpg" width="370"
-                            alt="Создание сайта">
+                <ul class="page__set page-focus page__team--cursset">
+                    <li class="page__time page__time--list page__tem--item">
+                        <picture>
+                            <source srcset="./images/desktop/what-we-do/box1.webp 1x, ./images/desktop/what-we-do/box1@2x.webp 1x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                        
+                            <source srcset="./images/desktop/what-we-do/box1.jpg 1x, ./images/desktop/what-we-do/box1@2x.jpg 1x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+
+                            <img src="./images/box-1.jpg" width="370" alt="Создание сайта">
+                        </picture>
+                        
                         <div class="managger">
                             <p class="managger__text">Десктопные приложения</p>
                         </div>
                     </li>
-                    <li class="page__time page__time--list page__tem--item"><img src="./images/box-2.jpg" width="370"
-                            alt="Разработка приложений">
+
+
+                    <li class="page__time page__time--list page__tem--item">
+                        <picture>
+                            <source srcset="./images/desktop/what-we-do/box-2.webp 1x, ./images/desktop/what-we-do/box-2@2x.webp 1x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                        
+                            <source srcset="./images/desktop/what-we-do/box-2.jpg 1x, ./images/desktop/what-we-do/box-2@2x.jpg 1x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <img src="./images/box-2.jpg" width="370" alt="Разработка приложений">
+                        </picture>
+
+                        
                         <div class="managger">
                             <p class="managger__text">Мобильные приложения</p>
                         </div>
                     </li>
-                    <li class="page__time page__time--list page__tem--item"><img src="./images/box-3.jpg" width="370"
-                            alt="Тестировка приложения">
+                    <li class="page__time page__time--list page__tem--item">
+                        <picture>
+                            <source srcset="./images/desktop/what-we-do/box-3.webp 1x, ./images/desktop/what-we-do/box-3@2x.webp 1x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                        
+                            <source srcset="./images/desktop/what-we-do/box-3.jpg 1x, ./images/desktop/what-we-do/box-3@2x.jpg 1x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <img src="./images/box-3.jpg" width="370" alt="Тестировка приложения">
+                        </picture>
+                        
                         <div class="managger">
                             <p class="managger__text">Дизайнерские решения</p>
                         </div>
@@ -144,9 +216,28 @@
 
                 <ul class="holder__list page__set">
                     <li class="page__time holder__gallery--item">
-                        <img src="./images/img.jpg" width="270" alt="Игорь Демьяненко">
+                        <picture>
+                            <source srcset="./images/desktop/team/ourteam-1.webp 1x, ./images/desktop/team/ourteam-1@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                            
+                            <source srcset="./images/tablet/team/ourteam-1.webp 1x, ./images/tablet/team/ourteam-1@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                            
+                            <source srcset="./images/mobile/team/ourteam-1.webp 1x, ./images/mobile/team/ourteam-1@2x.webp 2x"
+                                media="(max-width: 767.98px)" type="image/webp" />
+                            <source srcset="./images/desktop/team/ourteam-1.jpg 1x, ./images/desktop/team/ourteam-1@2x.jpg 2x"
+                             media="(min-width: 1200px)" type="image/jpeg" />
 
+                            <source srcset="./images/tablet/team/ourteam-1.jpg 1x, ./images/tablet/team/ourteam-1@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                                type="image/jpeg" />
 
+                            <source srcset="./images/mobile/team/ourteam-1.jpg 1x, ./images/mobile/team/ourteam-1@2x.jpg 2x"
+                            media="(max-width: 767.98px)"
+                                    type="image/jpeg" />
+                            <img src="./images/img.jpg" width="450"  height="460" alt="Игорь Демьяненко">
+                        </picture>
+                        
                         <div class="divace">
                             <h3 class="divace__subject">Игорь Демьяненко</h3>
                             <p class="divace__item">Product Designer</p>
@@ -184,7 +275,28 @@
 
                     </li>
                     <li class="page__time holder__gallery--item">
-                        <img src="./images/img-1.jpg" width="270" alt="Ольга Репина">
+                        <picture>
+                            <source srcset="./images/desktop/team/ourteam-2.webp 1x, ./images/desktop/team/ourteam-2@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                        
+                            <source srcset="./images/tablet/team/ourteam-2.webp 1x, ./images/tablet/team/ourteam-2@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                        
+                            <source srcset="./images/mobile/team/ourteam-2.webp 1x, ./images/mobile/team/ourteam-2@2x.webp 2x"
+                                media="(max-width: 767.98px)" type="image/webp" />
+
+
+                            <source srcset="./images/desktop/team/ourteam-2.jpg 1x, ./images/desktop/team/ourteam-2@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <source srcset="./images/tablet/team/ourteam-2.jpg 1x, ./images/tablet/team/ourteam-2@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                        
+                            <source srcset="./images/mobile/team/ourteam-2.jpg 1x, ./images/mobile/team/ourteam-2@2x.jpg 2x"
+                                media="(max-width: 767.98px)" type="image/jpeg" />
+                            <img src="./images/img-1.jpg" width="450"  height="460" alt="Ольга Репина">
+                        </picture>
+
                         <div class="divace">
                             <h3 class="divace__subject">Ольга Репина</h3>
                             <p class="divace__item">Frontend Developer</p>
@@ -220,8 +332,31 @@
                             </ul>
                         </div>
                     </li>
+
+
                     <li class="page__time holder__gallery--item">
-                        <img src="./images/img-2.jpg" width="270" alt="Николай Тарасов">
+                        <picture>
+                            <source srcset="./images/desktop/team/ourteam-3.webp 1x, ./images/desktop/team/ourteam-3@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                        
+                            <source srcset="./images/tablet/team/ourteam-3.webp 1x, ./images/tablet/team/ourteam-3@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                        
+                            <source srcset="./images/mobile/team/ourteam-3.webp 1x, ./images/mobile/team/ourteam-3@2x.webp 2x"
+                                media="(max-width: 767.98px)" type="image/webp" />
+                        
+                        
+                            <source srcset="./images/desktop/team/ourteam-3.jpg 1x, ./images/desktop/team/ourteam-3@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <source srcset="./images/tablet/team/ourteam-3.jpg 1x, ./images/tablet/team/ourteam-3@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                        
+                            <source srcset="./images/mobile/team/ourteam-3.jpg 1x, ./images/mobile/team/ourteam-3@2x.jpg 2x"
+                                media="(max-width: 767.98px)" type="image/jpeg" />
+                            <img src="./images/img-2.jpg" width="450"  height="460" alt="Николай Тарасов">
+                        </picture>
+                        
                         <div class="divace">
                             <h3 class="divace__subject">Николай Тарасов</h3>
                             <p class="divace__item">Marketing</p>
@@ -258,7 +393,28 @@
                         </div>
                     </li>
                     <li class="page__time holder__gallery--item">
-                        <img src="./images/img-3.jpg" width="270" alt="Михаил Ермаков">
+                        <picture>
+                            <source srcset="./images/desktop/team/ourteam-4.webp 1x, ./images/desktop/team/ourteam-4@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                        
+                            <source srcset="./images/tablet/team/ourteam-4.webp 1x, ./images/tablet/team/ourteam-4@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                        
+                            <source srcset="./images/mobile/team/ourteam-4.webp 1x, ./images/mobile/team/ourteam-4@2x.webp 2x"
+                                media="(max-width: 767.98px)" type="image/webp" />
+                        
+                        
+                            <source srcset="./images/desktop/team/ourteam-4.jpg 1x, ./images/desktop/team/ourteam-4@2x.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                        
+                            <source srcset="./images/tablet/team/ourteam-4.jpg 1x, ./images/tablet/team/ourteam-4@2x.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                        
+                            <source srcset="./images/mobile/team/ourteam-4.jpg 1x, ./images/mobile/team/ourteam-4@2x.jpg 2x"
+                                media="(max-width: 767.98px)" type="image/jpeg" />
+                            <img src="./images/img-3.jpg" width="450"  height="460" alt="Михаил Ермаков">
+                        </picture>
+                        
                         <div class="divace">
                             <h3 class="divace__subject">Михаил Ермаков</h3>
                             <p class="divace__item">UI Designer</p>
@@ -346,8 +502,9 @@
     </section>
 
     <!--Site footer-->
-     <footer class="basement">
+    <footer class="basement">
         <div class="container">
+            <div class="socie-life">
             <div class="additionally">
                 <a class="additionally__logo logotype" href="">Web<span class="lp">Studio</span></a>
                 <address class="find">
@@ -365,28 +522,28 @@
                 <p class="messengers__footer">Присоединяйтесь</p>
                 <ul class="divace__social">
                     <li class="divace__social-icons">
-                        <a href="" class="divace__social-link divace__link--features">
+                        <a href="" class="divace__social-link divace__svg--pictures divace__link--features">
                             <svg class="divace__icons-svg">
                                 <use href="./images/icons/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="divace__social-icons">
-                        <a href="" class="divace__social-link divace__link--features">
+                        <a href="" class="divace__social-link divace__svg--pictures divace__link--features">
                             <svg class="divace__icons-svg">
                                 <use href="./images/icons/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="divace__social-icons">
-                        <a href="" class="divace__social-link divace__link--features">
+                        <a href="" class="divace__social-link divace__svg--pictures divace__link--features">
                             <svg class="divace__icons-svg">
                                 <use href="./images/icons/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="divace__social-icons">
-                        <a href="" class="divace__social-link divace__link--features">
+                        <a href="" class="divace__social-link divace__svg--pictures divace__link--features">
                             <svg class="divace__icons-svg">
                                 <use href="./images/icons/sprite.svg#icon-linkedin"></use>
                             </svg>
@@ -394,6 +551,7 @@
                     </li>
                 </ul>
             </div>
+        </div>
 
             <div class="forma">
                 <p class="messengers__footer">Подпишитесь на рассылку</p>
@@ -401,13 +559,13 @@
                     <input type="email" class="forma__input" placeholder="E-mail">
                 </label>
 
-                <button type="submit" class="forma__button">Подписаться<svg class="forma__icon">
+                <button type="submit" class="forma__button"><span class="forma__text">Подписаться</span><svg class="forma__icon">
                         <use href="./images/icons/sprite.svg#icon-icon-send"></use>
                     </svg></button>
 
             </div>
         </div>
-    </footer>
+    </footer> 
 
     <!-- Backdroup -->
     <div class="backdrop is-hidden" data-modal>
@@ -466,7 +624,9 @@
 
         </div>
     </div>
+    
     <script src="./js/modal.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

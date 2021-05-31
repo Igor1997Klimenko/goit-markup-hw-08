@@ -226,6 +226,8 @@ img {
 
 @media screen and (max-width: 479px) {
   .inform__item {
+    width: 450px;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,6 +262,16 @@ img {
 
 .inform__list {
   max-width: 270px;
+}
+
+@media screen and (max-width: 479px) {
+  .inform__list {
+    margin-top: -30px;
+    width: 100%;
+    justify-items: center;
+    margin-bottom: 60px;
+    max-width: 450px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -298,7 +310,6 @@ img {
   border-radius: 4px;
   display: flex;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   align-items: center;
   justify-content: center;
@@ -475,6 +486,12 @@ img {
   background-color: var(--sctn-ftr);
 }
 
+@media screen and (max-width: 479px) {
+  .page-team {
+    width: fit-content;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .page-team {
     padding-bottom: 60px;
@@ -503,6 +520,13 @@ img {
   line-height: 1.2;
 }
 
+@media screen and (max-width: 479px) {
+  .page__captions {
+    width: 450px;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .page__captions {
     margin-bottom: 30px;
@@ -523,6 +547,19 @@ img {
 
 .holder__list {
   padding: 0;
+}
+
+@media screen and (max-width: 479px) {
+  .holder__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+    width: max-content;
+  }
 }
 
 .holder__gallery--item {
@@ -626,6 +663,13 @@ img {
   padding-left: 0;
 }
 
+@media screen and (max-width: 479px) {
+  .company__benefits {
+    padding-left: 0;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .company__benefits {
     display: flex;
@@ -652,6 +696,12 @@ img {
 
 .company__features {
   flex-basis: calc((100% - var(--page__set-gap) * 6) / 6);
+}
+
+@media screen and (max-width: 479px) {
+  .company__features {
+    flex-basis: calc((100% - 15px * 4) / 2);
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1575,6 +1625,12 @@ img {
   background-color: var(--dark-bg);
 }
 
+@media screen and (max-width: 479px) {
+  .basement {
+    width: max-content;
+  }
+}
+
 .socie-life {
   display: flex;
   flex-direction: column;
@@ -1736,7 +1792,7 @@ img {
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    max-width: 480px;
+    width: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
@@ -1747,7 +1803,6 @@ img {
 @media screen and (min-width: 768px) {
   .box {
     max-width: 100%;
-    width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero/Hero.jpg");
   }
 }
@@ -1841,6 +1896,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile-menu.is-open {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -1880,6 +1936,10 @@ img {
 
 .list {
   color: var(--main-blu-tx);
+}
+
+.mobile-block {
+  padding-left: 0;
 }
 
 .mobile-block__telephone {
@@ -1932,6 +1992,8 @@ img {
 }
 
 .spisok__menu {
+  position: relative;
+  margin-left: auto;
   padding-left: 0px;
   z-index: 111;
   background-color: transparent;
@@ -1972,6 +2034,12 @@ img {
 
 .spisok__menu .is-open .spisok__icon-close {
   position: fixed;
+}
+
+.is-open .spisok__menu-item {
+  position: fixed;
+  right: 20px;
+  top: 12px;
 }
 
 :root {

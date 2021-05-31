@@ -17,6 +17,7 @@
     left: 0;
 
     @media screen and (max-width: 767px) {
+      height: 100%;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -58,9 +59,9 @@
   color: var(--main-blu-tx);
 }
 
-// .mobile-block {
-//   padding: 0;
-// }
+.mobile-block {
+  padding-left: 0;
+}
 
 .mobile-block__telephone {
   display: block;
@@ -112,6 +113,8 @@
 }
 
 .spisok__menu {
+  position: relative;
+  margin-left: auto;
   padding-left: 0px;
   z-index: 111;
   background-color: transparent;
@@ -149,4 +152,10 @@
 
 .spisok__menu .is-open .spisok__icon-close {
   position: fixed;
+}
+
+ .is-open .spisok__menu-item{
+  position: fixed;
+  right: 20px;
+  top: 12px;
 }

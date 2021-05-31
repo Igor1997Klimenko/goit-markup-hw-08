@@ -24,6 +24,10 @@
   height: 580px;
   padding: 40px;
 
+   @media screen and (max-width: 479px) {
+    width: 380px;
+   }
+
   @media screen and (min-width: 480px) {
     width: 450px;
   }
@@ -179,6 +183,10 @@
     border: 1px solid var(--main-blu-tx);
   }
 
+  @media screen and (max-width: 479px) {
+    width: 300px;
+   }
+
   @media screen and (min-width: 480px) {
     width: 370px;
   }
@@ -257,4 +265,8 @@
     background-color: var(--blue-prim-col);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
+
+  @media screen and (max-width: 479px) {
+    margin: 0 auto;
+   }
 }

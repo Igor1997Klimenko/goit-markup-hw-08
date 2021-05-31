@@ -1953,7 +1953,6 @@ img {
 
 .is-open .spisok__icon-close {
   display: block;
-  position: fixed;
 }
 
 .spisok__menu:hover,

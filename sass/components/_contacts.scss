@@ -51,6 +51,10 @@
   &:focus {
     color: var(--main-blu-tx);
   }
+
+  @media screen and (max-width: 1200px) {
+    padding: 0;
+}
 }
 
 .spisok__icons {

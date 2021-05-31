@@ -181,7 +181,7 @@ img {
   color: var(--main-blu-tx);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
   .spisok__mobile {
     padding: 0;
   }
@@ -578,14 +578,14 @@ img {
   padding: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .divace__svg--pictures {
-    margin-bottom: 60px;
-  }
-}
-
 .divace__social-icons:not(:last-child) {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .divace__social-icons:not(:last-child) {
+    margin-bottom: 60px;
+  }
 }
 
 .divace__social-link {
@@ -1828,9 +1828,11 @@ img {
   top: 0;
   left: 100%;
   width: 100%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--alt-title-cl);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   height: 100vh;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
@@ -1878,10 +1880,6 @@ img {
 
 .list {
   color: var(--main-blu-tx);
-}
-
-.mobile-block {
-  padding: 0;
 }
 
 .mobile-block__telephone {
@@ -1934,6 +1932,7 @@ img {
 }
 
 .spisok__menu {
+  padding-left: 0px;
   z-index: 111;
   background-color: transparent;
   border: none;
@@ -1954,6 +1953,13 @@ img {
 
 .is-open .spisok__icon-close {
   display: block;
+  position: fixed;
+}
+
+.spisok__menu:hover,
+.spisok__menu:focus,
+.spisok__menu:active {
+  fill: var(--main-blu-tx);
 }
 
 .spisok__menu.is-open .spisok__icon-open {
@@ -1963,6 +1969,10 @@ img {
 .menu__container {
   display: none;
   position: absolute;
+}
+
+.spisok__menu .is-open .spisok__icon-close {
+  position: fixed;
 }
 
 :root {

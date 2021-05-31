@@ -134,9 +134,9 @@
   position: fixed;
 }
 
-.is-open .spisok__icon-close:hover,
-.is-open .spisok__icon-close:focus,
-.is-open .spisok__icon-close:active {
+.spisok__menu:hover,
+.spisok__menu:focus,
+ .spisok__menu:active {
   fill: var(--main-blu-tx);
 }
 

@@ -1815,7 +1815,7 @@ img {
 @media screen and (min-width: 768px) {
   .box {
     max-width: 100%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero/Hero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero/hero.jpg");
   }
 }
 

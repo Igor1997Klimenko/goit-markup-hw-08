@@ -2025,12 +2025,6 @@ img {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 479px) {
-  .social-time__list {
-    margin: 0;
-  }
-}
-
 .social-time__link {
   font-weight: 500;
   font-size: 18px;
@@ -2041,12 +2035,6 @@ img {
 
 .social-time__link:hover, .social-time__link:focus {
   color: black;
-}
-
-@media screen and (max-width: 479px) {
-  .social-time__link {
-    font-size: small;
-  }
 }
 
 .social-time__befor::before {

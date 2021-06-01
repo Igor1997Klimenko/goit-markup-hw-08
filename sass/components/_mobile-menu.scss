@@ -81,6 +81,11 @@
   letter-spacing: 0.02em;
   color: var(--title-cl);
   margin-bottom: 64px;
+
+  &:hover,
+  &:focus{
+    color: var(--main-blu-tx);
+  }
 }
 
 .social-time {
@@ -95,6 +100,7 @@
   display: flex;
   margin-top: 10px;
   margin-left: 10px;
+
 }
 
 .social-time__link {
@@ -102,8 +108,15 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--main-blu-tx);
+
+  &:hover,
+  &:focus{
+    color: black;
 }
+}
+
+
 
 .social-time__befor::before {
   content: "";

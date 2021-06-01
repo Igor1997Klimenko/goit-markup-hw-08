@@ -32,10 +32,6 @@
 .company__features {
   flex-basis: calc((100% - var(--page__set-gap) * 6) / 6);
 
-  @media screen and (max-width: 479px) {
-    flex-basis: calc((100% - 15px * 4) / 2);
-  }
-
   @media screen and (min-width: 480px) {
     margin: 15px;
     flex-basis: calc((100% - 15px * 4) / 2);

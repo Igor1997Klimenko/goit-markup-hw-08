@@ -273,7 +273,6 @@ img {
 
 @media screen and (max-width: 479px) {
   .inform__list {
-    margin-top: -30px;
     width: 100%;
     justify-items: center;
     margin-bottom: 60px;
@@ -709,6 +708,13 @@ img {
 
 .company__features {
   flex-basis: calc((100% - var(--page__set-gap) * 6) / 6);
+}
+
+@media screen and (max-width: 479px) {
+  .company__features {
+    margin: 15px;
+    flex-basis: calc((100% - 30px * 4) / 2);
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -2019,6 +2025,12 @@ img {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 479px) {
+  .social-time__list {
+    margin: 0;
+  }
+}
+
 .social-time__link {
   font-weight: 500;
   font-size: 18px;
@@ -2029,6 +2041,12 @@ img {
 
 .social-time__link:hover, .social-time__link:focus {
   color: black;
+}
+
+@media screen and (max-width: 479px) {
+  .social-time__link {
+    font-size: small;
+  }
 }
 
 .social-time__befor::before {

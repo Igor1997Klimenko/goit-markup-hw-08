@@ -101,6 +101,10 @@
   margin-top: 10px;
   margin-left: 10px;
 
+  @media screen and (max-width: 479px) {
+    margin: 0;
+  }
+
 }
 
 .social-time__link {
@@ -114,6 +118,11 @@
   &:focus{
     color: black;
 }
+
+@media screen and (max-width: 479px) {
+  font-size: small;
+}
+
 }
 
 

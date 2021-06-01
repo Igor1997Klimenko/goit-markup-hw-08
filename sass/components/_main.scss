@@ -73,17 +73,13 @@
     background-repeat: no-repeat;
     max-width: 100%;
     width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-// @media (min-device-pixel-ratio: 2),
-//   (-webkit-min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-
-// }
 
 .main__title {
   text-align: center;

@@ -64,6 +64,12 @@
   // }
 }
 
+.block-footer{
+  @media screen and (max-width: 479px) {
+    width: max-content;
+  }
+}
+
 .socie-life {
   display: flex;
   flex-direction: column;

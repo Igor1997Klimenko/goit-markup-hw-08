@@ -200,7 +200,7 @@ img {
 @media screen and (max-width: 479px) {
   .content {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
   }
 }
 
@@ -1650,6 +1650,12 @@ img {
   background-color: var(--dark-bg);
 }
 
+@media screen and (max-width: 479px) {
+  .block-footer {
+    width: max-content;
+  }
+}
+
 .socie-life {
   display: flex;
   flex-direction: column;
@@ -2020,6 +2026,12 @@ img {
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 479px) {
+  .spisok__menu {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {

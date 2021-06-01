@@ -784,6 +784,13 @@ img {
   background-color: var(--alt-title-cl);
 }
 
+@media screen and (max-width: 479px) {
+  .section-item {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .section-item {
     padding-top: 60px;
@@ -863,6 +870,12 @@ img {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-top: -15px;
+}
+
+@media screen and (max-width: 479px) {
+  .page__portfolio {
+    margin-right: -15px;
+  }
 }
 
 @media screen and (min-width: 480px) {

@@ -622,12 +622,18 @@ img {
   padding: 0;
 }
 
-.divace__social-icons:not(:last-child) {
+.icons-function:not(:last-child) {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 479px) {
+  .icons-function:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 480px) {
-  .divace__social-icons:not(:last-child) {
+  .icons-function:not(:last-child) {
     margin-bottom: 60px;
   }
 }

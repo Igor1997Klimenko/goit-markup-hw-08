@@ -5,12 +5,6 @@ body {
   background-color: var(--alt-title-cl);
 }
 
-@media screen and (max-width: 479px) {
-  body {
-    width: min-content;
-  }
-}
-
 h1,
 h2,
 h3,

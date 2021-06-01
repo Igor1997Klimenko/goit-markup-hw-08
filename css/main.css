@@ -1671,8 +1671,8 @@ img {
 
 @media screen and (max-width: 479px) {
   .block-footer {
-    margin-left: 15px;
     width: max-content;
+    margin-left: 15px;
   }
 }
 

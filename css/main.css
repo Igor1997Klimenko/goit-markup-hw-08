@@ -665,6 +665,12 @@ img {
   fill: currentColor;
 }
 
+@media screen and (max-width: 479px) {
+  .fit-content {
+    width: fit-content;
+  }
+}
+
 .section-page-tour {
   background-color: var(--alt-title-cl);
 }

@@ -59,3 +59,10 @@
   height: 20px;
   fill: currentColor;
 }
+
+.fit-content{
+  @media screen and (max-width: 479px) {
+    width: fit-content;
+
+  }
+}

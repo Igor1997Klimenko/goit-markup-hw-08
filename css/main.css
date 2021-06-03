@@ -2021,7 +2021,7 @@ img {
 .social-time {
   padding: 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: -10px;
   margin-left: -10px;
 }

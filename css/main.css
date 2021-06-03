@@ -1130,6 +1130,12 @@ img {
   position: relative;
 }
 
+@media screen and (max-width: 479px) {
+  .forma {
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .forma {
     margin: 0;
@@ -1673,13 +1679,6 @@ img {
   padding-bottom: 60px;
   padding-top: 60px;
   background-color: var(--dark-bg);
-}
-
-@media screen and (max-width: 479px) {
-  .block-footer {
-    width: max-content;
-    margin-left: 15px;
-  }
 }
 
 .socie-life {
